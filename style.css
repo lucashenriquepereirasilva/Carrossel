@@ -1,0 +1,36 @@
+* {
+    margin:  0;
+    padding: 0;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.carrossel {
+    width: 512px;
+
+    /* exibir apenas uma imagem */
+
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+
+    /** manipulando a transição no eixo X */
+    transform: translateX(100%);
+
+     /* efeito de transição */
+
+     transition: transform 0.5s ease-in-out;
+     
+     
+}
+
+.container img {
+    max-width: 512px; 
+}
